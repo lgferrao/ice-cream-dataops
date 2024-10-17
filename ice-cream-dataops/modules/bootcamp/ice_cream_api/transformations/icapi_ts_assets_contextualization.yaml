@@ -1,0 +1,17 @@
+externalId: 'icapi_ts_assets_contextualization'
+dataSetExternalId: 'ds_icapi'
+name: 'Icapi Timeseries Assests Contextualization'
+destination:
+  type: 'timeseries'
+ignoreNullFields: true
+isPublic: true
+conflictMode: update
+# Specify credentials separately like this:
+# You can also use different credentials for running the transformations than the credentials you use to deploy.
+authentication:
+  clientId: ${IDP_CLIENT_ID}
+  clientSecret: ${IDP_CLIENT_SECRET}
+  tokenUri: ${IDP_TOKEN_URL}
+  # Optional: If idP requires providing the cicd_scopes
+  cdfProjectName: ${CDF_PROJECT}
+  scopes: https://westeurope-1.cognitedata.com/.default

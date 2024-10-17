@@ -1,0 +1,3 @@
+externalId: 'icapi_ts_assets_contextualization'
+interval: "33 0 * * *"
+isPaused: false

@@ -1,0 +1,17 @@
+externalId: 'create_asset_hierarchy'
+dataSetExternalId: 'ds_icapi'
+name: 'Ice Cream Factory Source Data'
+destination:
+  type: 'asset_hierarchy'
+ignoreNullFields: true
+isPublic: true
+conflictMode: upsert
+# Specify credentials separately like this:
+# You can also use different credentials for running the transformations than the credentials you use to deploy.
+authentication:
+  clientId: ${IDP_CLIENT_ID}
+  clientSecret: ${IDP_CLIENT_SECRET}
+  tokenUri: ${IDP_TOKEN_URL}
+  # Optional: If idP requires providing the cicd_scopes
+  cdfProjectName: ${CDF_PROJECT}
+  scopes: https://westeurope-1.cognitedata.com/.default
